@@ -1,0 +1,6 @@
+#Mac crap
+.DS_Store
+
+# PPT Source
+*.pptx
+
