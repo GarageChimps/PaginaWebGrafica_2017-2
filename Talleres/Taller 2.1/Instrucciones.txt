@@ -1,0 +1,12 @@
+Instrucciones taller 2:
+
+En este segundo taller implementaremos modelos simples de iluminación y materiales
+
+- Mínimo (3 puntos) Luz puntual, Material Lambert
+- Completo (3 puntos) Luz direccional, Luz ambiente, Material Blinn Phong
+- Bonus (1 punto) Spotlight, Material Toon
+
+Se agrega un nuevo archivo para manejar los recursos, que por ahora son solo materiales, su programa
+debe permitir definir como parametro el path del archivo de recursos con el flag "-r" de la siguiente manera:
+
+ raytracer.exe -s scene1.json -r resources.json -w 512 -h 512 -i image.png 
