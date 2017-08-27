@@ -1,20 +1,21 @@
-Instrucciones taller 2, parte 1:
+Instrucciones taller 2, parte 2:
 
-En este segundo taller, prmera parte implementaremos modelos simples de iluminación y materiales
+En este segundo taller, segunda parte implementaremos sombra, reflexion y refraccion
 
-Modelos de luces:
+Las sombras deben funcionar correctamente con los tres tipos de fuentes de luz: 
  - Luz puntual
  - Luz direccional
  - Luz spotlight
 
-Modelos de materiales:
- - Material difuso lambert
- - Material especular Blinn-Phong
+Para la reflexion y refraccion se agrega un nuevo parametro para la ejecucion de su programa indicando
+el numero de rebotes que se simularan para un rayo reflejado/refractado. El flag a utilizar es "m" y un numero
+razonable como default es 3:
+  raytracer.exe -s scene1.json -r resources.json -w 512 -h 512 -i image.png -m 3
 
-Modelo de iluminación indirecta:
- - Iluminación ambiente 
+Se agregan nuevos tipos de materiales para la reflexion y refraccion:
+ - Reflective material
+ - Dielectric material (material refractivo) 
+
+Se agrega un nuevo parametro a la escena, para escenas con materiales refractivos: el indice de refraccion de la escena
+"refraction_index" que por defecto debería ser 1.
  
-Se agrega un nuevo archivo para manejar los recursos, que por ahora son solo materiales, su programa
-debe permitir definir como parametro el path del archivo de recursos con el flag "-r" de la siguiente manera:
-
- raytracer.exe -s scene1.json -r resources.json -w 512 -h 512 -i image.png 
