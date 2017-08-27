@@ -154,7 +154,14 @@
 		  "__type__": "dielectric_material",
 		  "name": "air_attenuated",
 		  "color": [ 1, 1, 1 ],
-		  "attenuation": [ 2, 2, 2 ],
+		  "attenuation": [ 1, 1, 1 ],
+		  "refraction_index": 1.0
+		},
+		{
+		  "__type__": "dielectric_material",
+		  "name": "air_attenuated_not_green",
+		  "color": [ 1, 1, 1 ],
+		  "attenuation": [ 1, 0, 1 ],
 		  "refraction_index": 1.0
 		}
     ]
