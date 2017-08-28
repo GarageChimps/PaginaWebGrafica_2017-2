@@ -2,10 +2,7 @@ Instrucciones taller 2, parte 2:
 
 En este segundo taller, segunda parte implementaremos sombra, reflexion y refraccion
 
-Las sombras deben funcionar correctamente con los tres tipos de fuentes de luz: 
- - Luz puntual
- - Luz direccional
- - Luz spotlight
+Las sombras deben funcionar correctamente con los tres tipos de fuentes de luz:  puntual, direccional y spotlight
 
 Para la reflexion y refraccion se agrega un nuevo parametro para la ejecucion de su programa indicando
 el numero de rebotes que se simularan para un rayo reflejado/refractado. El flag a utilizar es "m" y un numero
