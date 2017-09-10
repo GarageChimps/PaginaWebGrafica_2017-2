@@ -1,0 +1,8 @@
+Instrucciones taller 3, parte 1:
+
+En este tercer taller, primera parte implementaremos agregaremos un nuevo tipo de objeto: meshes de triangulos.
+
+En particular usted deberá:
+ - Cargar meshes en formato .obj
+ - Implementar intersección con rayos y shading de triangulos 
+ - Poder generar normales por vertice para meshes que no las tengan definida (cuando el flag compute_vertex_normals sea true) 
