@@ -1,0 +1,13 @@
+Instrucciones taller 3, parte 2:
+
+En este tercer taller, primera parte implementaremos agregaremos mejoras para nuestro raytracing de meshes.
+
+En particular usted deberá:
+ - Soportar transformaciones de rotacion, traslacion y escalamiento en meshes 
+ - Agregar un bounding box a los meshes y hacer el testeo de interseccion primero con el bounding box
+ - Agregar un octtree con sub-boundingbox para partes del mesh, y hacer el testeo de interseccion a través del octtree
+ 
+Se deberá agregar un nuevo parametro a la linea de comandos:
+ "ot" : nivel de profundidad del octtree (0: no hay octtree, solo el boundingbox principal, 3 es un buen default)
+
+Su programa además deberá imprimir en consola el tiempo de ejecución en segundos.
