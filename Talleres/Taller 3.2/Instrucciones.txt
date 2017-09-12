@@ -1,13 +1,26 @@
 Instrucciones taller 3, parte 2:
 
-En este tercer taller, primera parte implementaremos agregaremos mejoras para nuestro raytracing de meshes.
+En este tercer taller, segunda parte implementaremos agregaremos mejoras para nuestro raytracing de meshes.
 
 En particular usted deberá:
  - Soportar transformaciones de rotacion, traslacion y escalamiento en meshes 
- - Agregar un bounding box a los meshes y hacer el testeo de interseccion primero con el bounding box
- - Agregar un octtree con sub-boundingbox para partes del mesh, y hacer el testeo de interseccion a través del octtree
+ - Agregar un bounding box (axis aligned) a los meshes y hacer el testeo de interseccion primero con el bounding box
+    + Una implementacion de un algoritmo eficiente para testear interseccion entre rayo y bounding box lo puede
+	encontrar aqui: https://www.scratchapixel.com/lessons/3d-basic-rendering/minimal-ray-tracer-rendering-simple-shapes/ray-box-intersection
+ - Agregar un octtree de boundingboxs a un mesh para particionarlo, y hacer el testeo de interseccion a través del octtree
+    + Información sobre SAT como método para testear intersección entre triángulos y bounding boxes la pueden encontrar aquí:
+	http://www.dyn4j.org/2010/01/sat/
+	http://fileadmin.cs.lth.se/cs/Personal/Tomas_Akenine-Moller/pubs/tribox.pdf
+	+ Una implementación de SAT en 3D la pueden encontrara aquí:
+	https://stackoverflow.com/questions/17458562/efficient-aabb-triangle-intersection-in-c-sharp
  
 Se deberá agregar un nuevo parametro a la linea de comandos:
- "ot" : nivel de profundidad del octtree (0: no hay octtree, solo el boundingbox principal, 3 es un buen default)
+ "ot" : nivel de profundidad del octtree (0: no hay octtree, solo el bounding box principal, 3 es un buen default)
 
 Su programa además deberá imprimir en consola el tiempo de ejecución en segundos.
+
+Opcional:
+ - Se recomienda explorar las APIs de paralelismo del lenguaje que esté utilizando para paralelizar a nivel de rayos generados por pixeles
+ su algoritmo, para reducir los tiempos de sus raytracers y aprovechar mejor los múltiples cores.
+  + Para C++ se sugiere ocupar OpenMP: http://bisqwit.iki.fi/story/howto/openmp/
+  + Para Java se sugiere ocupar Parallel Streams: https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html
