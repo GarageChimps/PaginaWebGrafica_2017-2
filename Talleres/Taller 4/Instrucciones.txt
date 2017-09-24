@@ -1,0 +1,6 @@
+Instrucciones taller 6:
+
+- Mínimo (3 puntos) Texture mapping con meshes, con Texture filtering Nearest Neighbor
+- Completo (3 puntos) Texture mapping con esfera, con Texture filtering Bilinear
+- Bonus (1.0 puntos) Texturas especulares
+
