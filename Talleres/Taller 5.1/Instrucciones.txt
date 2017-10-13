@@ -1,0 +1,11 @@
+Instrucciones taller 5 parte 1:
+
+En esta primera parte del taller extenderemos nuestro raytracer para agregar efectos estocásticos, enviando multiples
+rayos por pixel. En particular los efectos a implementar son: 
+
+- Antialiasing y Depth of Field (escenas 1,2,3,4)
+- Sombras suaves y motion blur (escenas 5,6, 7)
+- Glossy reflection (escena 8)
+
+Para configurar el número de muestras por pixeles debe agregar el parámetro "-p X" a la ejecución de su progrma donde X sea el número de pixeles (>= 1).
+El valor por defecto debe si es que no se agrega el parámetro debe ser 1
